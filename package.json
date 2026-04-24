@@ -1,8 +1,0 @@
-{
-  "name": "srm-challenge-root",
-  "version": "1.0.0",
-  "scripts": {
-    "install": "npm install --prefix frontend && npm install --prefix backend",
-    "build": "npm run build --prefix frontend"
-  }
-}
