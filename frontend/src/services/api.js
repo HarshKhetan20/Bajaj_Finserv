@@ -1,6 +1,7 @@
 export const submitGraphData = async (dataArray) => {
     try {
-        const response = await fetch('http://localhost:8080/bfhl', {
+        const url = import.meta.env.PROD ? '/bfhl' : 'http://localhost:8080/bfhl';
+        const response = await fetch(url, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
